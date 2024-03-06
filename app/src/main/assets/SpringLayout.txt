@@ -1,0 +1,36 @@
+import java.awt.*;
+import javax.swing.*;
+public class SpringLayoutExample {
+ public static void main(String[] arguments) {
+ JFrame.setDefaultLookAndFeelDecorated(true);
+ JFrame frame = new JFrame("SpringLayoutExample Example");
+ frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+ frame.setSize(300, 200);
+ Container content = frame.getContentPane();
+ SpringLayout layout = new SpringLayout();
+ frame.setLayout(layout);
+  Component b1 = new JButton("Button 1");
+  Component b2 = new JButton("Button 2");
+  Component b3 = new JButton("Button 3");
+  Component b4 = new JButton("Button 4");
+  Component b5 = new JButton("Button 5");
+  frame.add(b1);
+  frame.add(b2);
+  frame.add(b3);
+  frame.add(b4);
+  frame.add(b5);
+  layout.putConstraint(SpringLayout.WEST, b1, 55, SpringLayout.WEST, content);
+  layout.putConstraint(SpringLayout.NORTH, b1, 10, SpringLayout.NORTH,
+ content);
+  layout.putConstraint(SpringLayout.WEST, b2, 50, SpringLayout.WEST, content);
+  layout.putConstraint(SpringLayout.NORTH, b2, 20, SpringLayout.SOUTH, b1);
+  layout.putConstraint(SpringLayout.WEST, b3, 55, SpringLayout.WEST, content);
+  layout.putConstraint(SpringLayout.NORTH, b3, 20, SpringLayout.SOUTH, b2);
+  layout.putConstraint(SpringLayout.WEST, b4, 35, SpringLayout.EAST, b1);
+  layout.putConstraint(SpringLayout.NORTH, b4, 20, SpringLayout.NORTH,
+ content);
+  layout.putConstraint(SpringLayout.WEST, b5, 25, SpringLayout.EAST, b1);
+  layout.putConstraint(SpringLayout.NORTH, b5,80, SpringLayout.SOUTH, b1);
+  frame.setVisible(true);
+  }
+ }

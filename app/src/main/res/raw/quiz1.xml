@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<quiz>
+    <question id="1" text="W wyniku kompilacji kodu źródłowego Java otrzymano między innymi pliki Class$1.class, Class$2.class. Dlaczego w nazwach plików klasowych po znaku $ są liczby 1 i 2:">
+        <option id="1" text="Ponieważ klasa zawierała dwie klasy wewnętrzne o nazwach 1 i 2 " correct="false" />
+        <option id="2" text="Ponieważ klasa zawierała dwie anonimowe klasy wewnętrzne" correct="true" />
+        <option id="3" text="Ponieważ klasa zawierała dwie nazwane klasy abstrakcyjne" correct="false" />
+        <option id="4" text="Ponieważ klasa zawierała dwie nazwane klasy adaptacyjne" correct="false" />
+    </question>
+    <question id="2" text="W języku Java w klasie serwletów javax.servlet.http.HttpServlet za obsługę żądań typu GET odpowiada metoda:">
+        <option id="1" text="processRequest()" correct="false" />
+        <option id="2" text="doGet()" correct="true" />
+        <option id="3" text="doPost()" correct="false" />
+        <option id="4" text="Język Java nie obsługuje żądań typu GET" correct="false" />
+    </question>
+    <question id="3" text="Która składnia dostępu do kolekcji ArrayList&lt;String&gt; myList = new ArrayList&lt;String&gt;(); za pomocą pętli for jest poprawna:">
+        <option id="1" text="for (int i = 0; i &lt; myList.size(); i++) { System.out.println(myList(i)); }" correct="false" />
+        <option id="2" text="for (int s : myList) { System.out.println(s); }" correct="false" />
+        <option id="3" text="for (String s : myList) { System.out.println(s); }" correct="true" />
+        <option id="4" text="for (int s = 0) { System.out.println(s); }" correct="false" />
+    </question>
+</quiz>
